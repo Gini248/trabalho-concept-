@@ -5,12 +5,6 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-.navbar {
-    background-color: rgb(73, 139, 194);
-    overflow: hidden;
-    border-bottom: 10px solid rgba(51, 245, 2, 0.89);
-}
-
 /* Container do vídeo */
 .video-background {
     position: fixed;
@@ -22,6 +16,9 @@ body, html {
     z-index: -1; /* Coloca o vídeo atrás do conteúdo */
 }
 
+.espaco{
+  margin-top: 10%;
+}
 .video-background video {
     position: absolute;
     top: 50%;
@@ -111,6 +108,17 @@ body, html {
   width: auto;
   margin-top: -22px;
   padding: 16px;
+
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -119,19 +127,23 @@ body, html {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+  color: rgb(158, 35, 111);
+ 
 }
+
+
 
 /* Caption text */
 .text {
+
+  color: #522020;
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -141,16 +153,20 @@ body, html {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+.numbertext {
+  color: rgb(158, 35, 111);
+}
+
 .numbertext {
   color: #f2f2f2;
+
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -166,7 +182,6 @@ body, html {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -176,3 +191,262 @@ body, html {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.mmm{
+  position: absolute;
+  margin-left: 62%;
+  margin-bottom: 12%;
+}
+
+.eventos{
+  position: absolute;
+  margin-left: 50%;
+  margin-bottom: 35%;
+  z-index: 1;
+}
+
+.em{
+ margin-right: 40%;
+ margin-bottom: 8%;
+}
+
+.image-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; 
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  flex: 0 0 calc(33.333% - 20px); 
+  margin-bottom: 10px; 
+  margin-right: 35%;
+  margin-bottom: 13%;
+}
+
+
+.botao {
+  background-image: linear-gradient(92.88deg, #6640b6 9.16%, #ed246f 43.89%, #d73fa4 64.72%);
+  border-radius: 8px;
+  border-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.botao :hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .botao {
+    padding: 0 2.6rem;
+  }
+}
+
+.body2{
+  background-color: rgb(222, 206, 176); 
+}
+
+.doc-container {
+  margin-left: 50%;
+  width: 40%;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.cands{
+  box-shadow: 20px 2px  10px #d73fa4;
+  background-color: rgb(222, 206, 176);
+}
+
+.cihtics{
+
+  margin-right: 90%;
+  margin-top: 4px;
+}
+
+
+.cands_imagem{
+  margin-right: 90%;
+}
+
+  .empressas1{
+    position: absolute;
+    margin-right: 25%;
+    margin-top: 20%;
+  }
+
+  .form-container {
+    width: 500px;
+    background: linear-gradient(#e21ad8, #49036400) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+    margin-top: 10%;
+    margin-left: 5;
+    position: absolute;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .form-container .form-group input {
+    width: 90%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid rgb(222, 206, 176);
+  }
+  
+  .form-container .form-group textarea {
+    width: 90%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    border: 1px solid rgb(222, 206, 176);
+    background-color: transparent;
+    font-family: inherit;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+  }
+  
+  .form-container .form-submit-btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: rgb(189, 62, 157);
+    font-weight: 600;
+    width: 40%;
+    background: rgb(222, 206, 176);
+    border: 1px solid rgb(222, 206, 176);
+    padding: 12px 16px;
+    font-size: inherit;
+    gap: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+  }
+  
+  .texto_cand{
+    position: absolute;
+    margin-top: auto;
+    margin-left: 10%
+  }
+  
+  .logo_cand{
+    position: absolute;
+    margin-top: 16%;
+    margin-left: 20%
+  }
+
+  .navbar_logo{
+
+    margin-left: 1%;
+  }
+
+  .texto_sobre2{
+    position: absolute;
+  }
+
+  .texto_sobre{
+    margin-top: 12%;
+  }
+  
+  .mc_sobre{
+    position: absolute;
+    margin-left: 75.5%;
+    margin-bottom: 90%;
+  }
+
+  .npc_sobre{
+    position: absolute;
+margin-left: 40%;
+margin-top: 24.2%;
+
+  }
+
+  .tenis{
+    margin-left: 20%;
+    margin-bottom: 7%;
+  }
+
+ 
